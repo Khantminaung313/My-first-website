@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* -------------header start------------------- */
+
+header
+{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(79deg, #ff47c3 0%, #a113f2 100%);
+    position: relative;
+    padding-top: 100px;
+}
+
+.navbar
+{
+    width: 100%;
+    background-image: linear-gradient(79deg, #ff47c3 0%, #a113f2 100%);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    
+}
+
+.navbar-brand img
+{
+    width: 120px;
+    height: 40px;
+}
+
+.nav-item a
+{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.home-title
+{
+    margin-top: 150px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.greeting
+{
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+}
+
+.play-btn
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.play-btn img
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.play-btn span
+{
+    text-transform: capitalize;
+    color: white;
+}
+
+.home-img
+{
+    width: 100%;
+}
+
+.wave-1
+{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* -----------------services section ---------------------- */
+
+.services-section
+{
+    padding: 100px 0 80px 0;
+    text-align: center;
+}
+
+.title
+{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.title::before
+{
+    content: "";
+    width: 150px;
+    height: 5px;
+    background-color: #a113f2;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.title::after
+{
+    content: "";
+    width: 50px;
+    height: 7px;
+    background-color: #a113f2;
+    position: absolute;
+    bottom: -21px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.service-boxs
+{
+    text-align: center;
+    padding: 20px;
+}
+
+.services-img
+{
+    width: 65px;
+    height: 65px;
+    margin-bottom: 30px;
+}
+
+.service-boxs h4
+{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.service-boxs p
+{
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align:center;
+}
+
+.services-btn
+{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: auto;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: linear-gradient(79deg, #ff47c3 0%, #a113f2 100%);
+    color: white;
+    border-radius: 30px;
+    overflow-x: hidden;
+}
+
+.services-btn::before
+{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(91deg, #d323b6 0%, #9804ee 100%);
+    transform: scaleX(0);
+    transition: transform 250ms ease-out;
+    transform-origin: right;
+}
+
+.services-btn:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.services-text{
+    z-index: 2;
+}
+
+.services-btn:hover .services-text{
+    color: white;
+}
+
+
+/* about section start */
+
+.about
+{
+    margin: 50px 0;
+    padding: 100px 0 50px 0;
+}
+
+.about-title
+{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.about-data-list li
+{
+    list-style: disc;
+    margin-bottom: 10px;
+}
+
+.about-img
+{
+    width: 100%;
+}
+
+/* testimonials section start */
+
+.testimonial-section
+{
+    padding: 100px 0 80px 0;
+    margin-bottom: 100px;
+}
+
+.testimonial-box
+{
+    padding: 0 15px;
+    border-left: 5px  solid #a113f2;
+}
+
+.testimonial-box p
+{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.profile
+{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.profile img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile span
+{
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+/* --------------contact section ----------------- */
+
+.contact{
+    padding: 100px 0 50px 0;
+}
+
+.social-media-links
+{
+    display: flex;
+    gap :10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.social-media-links a img
+{
+    width: 50px;
+    height: 50px;
+    transition: all ease-out 250ms;
+}
+
+.social-media-links a:hover img
+{
+    transform: translateY(-10px);
+}
+
+/* ------------contact section start-------------- */
+
+footer
+{
+    background: linear-gradient(79deg, #ff47c3 0%, #a113f2 100%);
+}
+
+.wave-2
+{
+    width: 100%;
+}
+
+.logo-img
+{
+    height: 30px;
+}
+
+.footer-section{
+    padding: 50px 0;
+}
+
+.footer-section p
+{
+    font-size: 0.8rem;
+    color: white;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.footer-section h5{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer-section a
+{
+    display: block;
+    margin: 10px 0;
+    font-size: 0.8rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer-section i{
+    width: 30px;
+    height: 30px;
+    line-height: 2;
+    text-align: center;
+    background: linear-gradient(79deg, #ff47c3 0%, #a113f2 100%);
+    margin-right: 15px;
+}
+
+.footer-section i:hover{
+    opacity: 0.8;
+}
+
+.footer-section input{
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+.footer-section input::placeholder
+{
+    font-size: 0.8rem;
+}
+
+.footer-section button{
+    display: block;
+    padding: 5px 15px;
+    border-radius: 2px;
+    background: linear-gradient(79deg, #ff47c3 0%, #a113f2 100%);
+    margin-top: 20px;
+    color: white;
+}
+
+.footer-section button:hover{
+    opacity: 0.8;
+    color: white;
+}
